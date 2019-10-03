@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		B0CF0B27B95605A287512710 /* Pods_GoBankaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */; };
 		B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98262345E81700431AE0 /* AppDelegate.swift */; };
 		B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98282345E81700431AE0 /* SceneDelegate.swift */; };
-		B62C982B2345E81700431AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C982A2345E81700431AE0 /* ViewController.swift */; };
+		B62C982B2345E81700431AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C982A2345E81700431AE0 /* LoginViewController.swift */; };
 		B62C982E2345E81700431AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C982C2345E81700431AE0 /* Main.storyboard */; };
 		B62C98302345E81800431AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62C982F2345E81800431AE0 /* Assets.xcassets */; };
 		B62C98332345E81800431AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C98312345E81800431AE0 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,12 @@
 		B62C98572345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
 		B62C98582345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
 		B62C98592345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
+		B683DCE623461B8200BA8A02 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683DCE523461B8200BA8A02 /* UserHomeViewController.swift */; };
+		B6C376712346093200039A51 /* RegitrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C376702346093200039A51 /* RegitrationViewController.swift */; };
+		B6C3767423460B4200039A51 /* auth_validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767323460B4200039A51 /* auth_validation.swift */; };
+		B6C3767723460D3B00039A51 /* requiredFields_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767623460D3B00039A51 /* requiredFields_helper.swift */; };
+		B6C376792346105400039A51 /* customAlert_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C376782346105400039A51 /* customAlert_helper.swift */; };
+		B6C3767C2346122E00039A51 /* auth_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767B2346122E00039A51 /* auth_model.swift */; };
 		FC5FDF8CB402D1A1C098B6A8 /* Pods_GoBankaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +57,7 @@
 		B62C98232345E81700431AE0 /* GoBanka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBanka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62C98262345E81700431AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B62C98282345E81700431AE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B62C982A2345E81700431AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B62C982A2345E81700431AE0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B62C982D2345E81700431AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B62C982F2345E81800431AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B62C98322345E81800431AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +69,12 @@
 		B62C98482345E81800431AE0 /* GoBankaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBankaUITests.swift; sourceTree = "<group>"; };
 		B62C984A2345E81800431AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B683DCE523461B8200BA8A02 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		B6C376702346093200039A51 /* RegitrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegitrationViewController.swift; sourceTree = "<group>"; };
+		B6C3767323460B4200039A51 /* auth_validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth_validation.swift; sourceTree = "<group>"; };
+		B6C3767623460D3B00039A51 /* requiredFields_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requiredFields_helper.swift; sourceTree = "<group>"; };
+		B6C376782346105400039A51 /* customAlert_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customAlert_helper.swift; sourceTree = "<group>"; };
+		B6C3767B2346122E00039A51 /* auth_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth_model.swift; sourceTree = "<group>"; };
 		D197EFA80C0F34B7E33BC0B3 /* Pods-GoBankaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaTests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaTests/Pods-GoBankaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaUITests/Pods-GoBankaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +117,6 @@
 				FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */,
 				ADA94FD8355808B935F4D27D /* Pods-GoBankaUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,7 +157,10 @@
 			children = (
 				B62C98262345E81700431AE0 /* AppDelegate.swift */,
 				B62C98282345E81700431AE0 /* SceneDelegate.swift */,
-				B62C982A2345E81700431AE0 /* ViewController.swift */,
+				B6C3767D2346164100039A51 /* controllers */,
+				B6C3767A2346121700039A51 /* models */,
+				B6C3767523460D0D00039A51 /* helpers */,
+				B6C3767223460B3400039A51 /* validations */,
 				B62C982C2345E81700431AE0 /* Main.storyboard */,
 				B62C982F2345E81800431AE0 /* Assets.xcassets */,
 				B62C98312345E81800431AE0 /* LaunchScreen.storyboard */,
@@ -172,6 +186,41 @@
 				B62C984A2345E81800431AE0 /* Info.plist */,
 			);
 			path = GoBankaUITests;
+			sourceTree = "<group>";
+		};
+		B6C3767223460B3400039A51 /* validations */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3767323460B4200039A51 /* auth_validation.swift */,
+			);
+			path = validations;
+			sourceTree = "<group>";
+		};
+		B6C3767523460D0D00039A51 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3767623460D3B00039A51 /* requiredFields_helper.swift */,
+				B6C376782346105400039A51 /* customAlert_helper.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		B6C3767A2346121700039A51 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3767B2346122E00039A51 /* auth_model.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B6C3767D2346164100039A51 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B62C982A2345E81700431AE0 /* LoginViewController.swift */,
+				B6C376702346093200039A51 /* RegitrationViewController.swift */,
+				B683DCE523461B8200BA8A02 /* UserHomeViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,9 +447,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62C982B2345E81700431AE0 /* ViewController.swift in Sources */,
+				B6C376792346105400039A51 /* customAlert_helper.swift in Sources */,
+				B6C3767423460B4200039A51 /* auth_validation.swift in Sources */,
+				B62C982B2345E81700431AE0 /* LoginViewController.swift in Sources */,
+				B6C376712346093200039A51 /* RegitrationViewController.swift in Sources */,
+				B6C3767723460D3B00039A51 /* requiredFields_helper.swift in Sources */,
 				B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */,
+				B683DCE623461B8200BA8A02 /* UserHomeViewController.swift in Sources */,
 				B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */,
+				B6C3767C2346122E00039A51 /* auth_model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
