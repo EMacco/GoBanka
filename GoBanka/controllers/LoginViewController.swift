@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
     let alert = CustomAlert()
     @IBOutlet weak var loginBtn: UIButton!
     
+    let currentUser = AuthModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,17 +37,24 @@ class LoginViewController: UIViewController {
         let email = RequiredFields.trimWhiteSpaces(text: emailField.text!)
         let password = RequiredFields.trimWhiteSpaces(text: passwordField.text!)
         loginBtn.isEnabled = false
-        AuthModel.login(email: email, password: password) { (user, error) in
+        self.currentUser.login(email: email, password: password) { (user, error) in
             self.loginBtn.isEnabled = true
             if error != "" {
                 self.logAttempt(valid: false)
                 self.alert.showAlert(text: "Invalid username or password", type: "error", parentView: self.view)
             } else {
-                AuthModel.getUser(email: email) { (user, error) in
+                self.currentUser.getUser(email: email) { (user, error) in
                     if let userDetails = user as? NSDictionary {
-                        for (_, value) in userDetails {
+                        for (key, value) in userDetails {
                             let details = value as! NSDictionary
+                            let id = key as! String
+                            let email = details["email"] as! String
+                            let fullName = details["fullName"] as! String
+                            let accountNumber = details["accountNumber"] as! String
+                            let balance = details["balance"] as! Double
                             let isActive = details["active"] as? Bool
+                            self.currentUser.updateUserDetails(id: id, email: email, fullName: fullName, accountNumber: accountNumber, balance: balance, isActive: isActive ?? true)
+                            
                             if isActive ?? true {
                                 self.redirectToHome()
                                 self.logAttempt(valid: true)
@@ -61,9 +70,9 @@ class LoginViewController: UIViewController {
     
     func logAttempt(valid: Bool) {
         let email = RequiredFields.trimWhiteSpaces(text: emailField.text!)
-        AuthModel.getUser(email: email) { (user, error) in
+        self.currentUser.getUser(email: email) { (user, error) in
             if let userDetails = user as? NSDictionary {
-                AuthModel.logAttempt(id: userDetails.allKeys[0] as! String, valid: valid) { (blocked) in
+                self.currentUser.logAttempt(id: userDetails.allKeys[0] as! String, valid: valid) { (blocked) in
                     if blocked {
                         self.alert.showAlert(text: "This account has been blocked", type: "error", parentView: self.view)
                     }
@@ -76,7 +85,7 @@ class LoginViewController: UIViewController {
         self.passwordField.text = ""
         let controller = storyboard?.instantiateViewController(identifier: "userHomeVC") as! UserHomeViewController
         controller.modalTransitionStyle = .flipHorizontal
-        controller.userEmail = RequiredFields.trimWhiteSpaces(text: emailField.text!)
+        controller.currentUser = self.currentUser
         self.present(controller, animated: true, completion: nil)
     }
     

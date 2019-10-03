@@ -20,12 +20,16 @@
 		B62C98572345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
 		B62C98582345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
 		B62C98592345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
-		B683DCE623461B8200BA8A02 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683DCE523461B8200BA8A02 /* UserHomeViewController.swift */; };
+		B683DCEA234643CB00BA8A02 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683DCE9234643CB00BA8A02 /* UserHomeViewController.swift */; };
+		B683DCED234647CC00BA8A02 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683DCEC234647CC00BA8A02 /* TransactionModel.swift */; };
+		B6A4EF4E234C8EE30033B21F /* AuthApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4EF4D234C8EE30033B21F /* AuthApiProtocol.swift */; };
 		B6C376712346093200039A51 /* RegitrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C376702346093200039A51 /* RegitrationViewController.swift */; };
 		B6C3767423460B4200039A51 /* auth_validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767323460B4200039A51 /* auth_validation.swift */; };
 		B6C3767723460D3B00039A51 /* requiredFields_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767623460D3B00039A51 /* requiredFields_helper.swift */; };
 		B6C376792346105400039A51 /* customAlert_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C376782346105400039A51 /* customAlert_helper.swift */; };
-		B6C3767C2346122E00039A51 /* auth_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767B2346122E00039A51 /* auth_model.swift */; };
+		B6C3767C2346122E00039A51 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767B2346122E00039A51 /* AuthModel.swift */; };
+		B6F5EF14234C9DD5003B6E90 /* TransactionApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5EF13234C9DD5003B6E90 /* TransactionApiProtocol.swift */; };
+		B6F5EF16234CA358003B6E90 /* textFormatter_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5EF15234CA358003B6E90 /* textFormatter_helper.swift */; };
 		FC5FDF8CB402D1A1C098B6A8 /* Pods_GoBankaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,12 +73,16 @@
 		B62C98482345E81800431AE0 /* GoBankaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBankaUITests.swift; sourceTree = "<group>"; };
 		B62C984A2345E81800431AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B683DCE523461B8200BA8A02 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		B683DCE9234643CB00BA8A02 /* UserHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		B683DCEC234647CC00BA8A02 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		B6A4EF4D234C8EE30033B21F /* AuthApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiProtocol.swift; sourceTree = "<group>"; };
 		B6C376702346093200039A51 /* RegitrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegitrationViewController.swift; sourceTree = "<group>"; };
 		B6C3767323460B4200039A51 /* auth_validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth_validation.swift; sourceTree = "<group>"; };
 		B6C3767623460D3B00039A51 /* requiredFields_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requiredFields_helper.swift; sourceTree = "<group>"; };
 		B6C376782346105400039A51 /* customAlert_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customAlert_helper.swift; sourceTree = "<group>"; };
-		B6C3767B2346122E00039A51 /* auth_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth_model.swift; sourceTree = "<group>"; };
+		B6C3767B2346122E00039A51 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		B6F5EF13234C9DD5003B6E90 /* TransactionApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionApiProtocol.swift; sourceTree = "<group>"; };
+		B6F5EF15234CA358003B6E90 /* textFormatter_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFormatter_helper.swift; sourceTree = "<group>"; };
 		D197EFA80C0F34B7E33BC0B3 /* Pods-GoBankaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaTests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaTests/Pods-GoBankaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaUITests/Pods-GoBankaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +209,7 @@
 			children = (
 				B6C3767623460D3B00039A51 /* requiredFields_helper.swift */,
 				B6C376782346105400039A51 /* customAlert_helper.swift */,
+				B6F5EF15234CA358003B6E90 /* textFormatter_helper.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -208,7 +217,10 @@
 		B6C3767A2346121700039A51 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				B6C3767B2346122E00039A51 /* auth_model.swift */,
+				B6C3767B2346122E00039A51 /* AuthModel.swift */,
+				B683DCEC234647CC00BA8A02 /* TransactionModel.swift */,
+				B6F5EF13234C9DD5003B6E90 /* TransactionApiProtocol.swift */,
+				B6A4EF4D234C8EE30033B21F /* AuthApiProtocol.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -217,8 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				B62C982A2345E81700431AE0 /* LoginViewController.swift */,
+				B683DCE9234643CB00BA8A02 /* UserHomeViewController.swift */,
 				B6C376702346093200039A51 /* RegitrationViewController.swift */,
-				B683DCE523461B8200BA8A02 /* UserHomeViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -448,14 +460,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6C376792346105400039A51 /* customAlert_helper.swift in Sources */,
+				B6F5EF14234C9DD5003B6E90 /* TransactionApiProtocol.swift in Sources */,
 				B6C3767423460B4200039A51 /* auth_validation.swift in Sources */,
 				B62C982B2345E81700431AE0 /* LoginViewController.swift in Sources */,
 				B6C376712346093200039A51 /* RegitrationViewController.swift in Sources */,
+				B6F5EF16234CA358003B6E90 /* textFormatter_helper.swift in Sources */,
 				B6C3767723460D3B00039A51 /* requiredFields_helper.swift in Sources */,
 				B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */,
-				B683DCE623461B8200BA8A02 /* UserHomeViewController.swift in Sources */,
+				B683DCED234647CC00BA8A02 /* TransactionModel.swift in Sources */,
+				B683DCEA234643CB00BA8A02 /* UserHomeViewController.swift in Sources */,
 				B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */,
-				B6C3767C2346122E00039A51 /* auth_model.swift in Sources */,
+				B6A4EF4E234C8EE30033B21F /* AuthApiProtocol.swift in Sources */,
+				B6C3767C2346122E00039A51 /* AuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
