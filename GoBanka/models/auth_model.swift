@@ -49,4 +49,15 @@ class AuthModel {
             }
         }
     }
+    
+    static func createUser(userDetails: [String: Any], completionHandler: @escaping((_ success: Bool) -> Void)) {
+        let userRef = Database.database().reference().child("Users").childByAutoId()
+        userRef.setValue(userDetails) { (error, _) in
+            if error == nil {
+                completionHandler(true)
+            } else {
+                completionHandler(false)
+            }
+        }
+    }
 }
