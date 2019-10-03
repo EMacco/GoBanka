@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98262345E81700431AE0 /* AppDelegate.swift */; };
+		B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98282345E81700431AE0 /* SceneDelegate.swift */; };
+		B62C982B2345E81700431AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C982A2345E81700431AE0 /* ViewController.swift */; };
+		B62C982E2345E81700431AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C982C2345E81700431AE0 /* Main.storyboard */; };
+		B62C98302345E81800431AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62C982F2345E81800431AE0 /* Assets.xcassets */; };
+		B62C98332345E81800431AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C98312345E81800431AE0 /* LaunchScreen.storyboard */; };
+		B62C983E2345E81800431AE0 /* GoBankaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C983D2345E81800431AE0 /* GoBankaTests.swift */; };
+		B62C98492345E81800431AE0 /* GoBankaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98482345E81800431AE0 /* GoBankaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B62C983A2345E81800431AE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B62C981B2345E81700431AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62C98222345E81700431AE0;
+			remoteInfo = GoBanka;
+		};
+		B62C98452345E81800431AE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B62C981B2345E81700431AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62C98222345E81700431AE0;
+			remoteInfo = GoBanka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B62C98232345E81700431AE0 /* GoBanka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBanka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62C98262345E81700431AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B62C98282345E81700431AE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B62C982A2345E81700431AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B62C982D2345E81700431AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B62C982F2345E81800431AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B62C98322345E81800431AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B62C98342345E81800431AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62C98392345E81800431AE0 /* GoBankaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoBankaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62C983D2345E81800431AE0 /* GoBankaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBankaTests.swift; sourceTree = "<group>"; };
+		B62C983F2345E81800431AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62C98442345E81800431AE0 /* GoBankaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoBankaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62C98482345E81800431AE0 /* GoBankaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBankaUITests.swift; sourceTree = "<group>"; };
+		B62C984A2345E81800431AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B62C98202345E81700431AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62C98362345E81800431AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62C98412345E81800431AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B62C981A2345E81700431AE0 = {
+			isa = PBXGroup;
+			children = (
+				B62C98252345E81700431AE0 /* GoBanka */,
+				B62C983C2345E81800431AE0 /* GoBankaTests */,
+				B62C98472345E81800431AE0 /* GoBankaUITests */,
+				B62C98242345E81700431AE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B62C98242345E81700431AE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B62C98232345E81700431AE0 /* GoBanka.app */,
+				B62C98392345E81800431AE0 /* GoBankaTests.xctest */,
+				B62C98442345E81800431AE0 /* GoBankaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B62C98252345E81700431AE0 /* GoBanka */ = {
+			isa = PBXGroup;
+			children = (
+				B62C98262345E81700431AE0 /* AppDelegate.swift */,
+				B62C98282345E81700431AE0 /* SceneDelegate.swift */,
+				B62C982A2345E81700431AE0 /* ViewController.swift */,
+				B62C982C2345E81700431AE0 /* Main.storyboard */,
+				B62C982F2345E81800431AE0 /* Assets.xcassets */,
+				B62C98312345E81800431AE0 /* LaunchScreen.storyboard */,
+				B62C98342345E81800431AE0 /* Info.plist */,
+			);
+			path = GoBanka;
+			sourceTree = "<group>";
+		};
+		B62C983C2345E81800431AE0 /* GoBankaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B62C983D2345E81800431AE0 /* GoBankaTests.swift */,
+				B62C983F2345E81800431AE0 /* Info.plist */,
+			);
+			path = GoBankaTests;
+			sourceTree = "<group>";
+		};
+		B62C98472345E81800431AE0 /* GoBankaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B62C98482345E81800431AE0 /* GoBankaUITests.swift */,
+				B62C984A2345E81800431AE0 /* Info.plist */,
+			);
+			path = GoBankaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B62C98222345E81700431AE0 /* GoBanka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62C984D2345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBanka" */;
+			buildPhases = (
+				B62C981F2345E81700431AE0 /* Sources */,
+				B62C98202345E81700431AE0 /* Frameworks */,
+				B62C98212345E81700431AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoBanka;
+			productName = GoBanka;
+			productReference = B62C98232345E81700431AE0 /* GoBanka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B62C98382345E81800431AE0 /* GoBankaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62C98502345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBankaTests" */;
+			buildPhases = (
+				B62C98352345E81800431AE0 /* Sources */,
+				B62C98362345E81800431AE0 /* Frameworks */,
+				B62C98372345E81800431AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B62C983B2345E81800431AE0 /* PBXTargetDependency */,
+			);
+			name = GoBankaTests;
+			productName = GoBankaTests;
+			productReference = B62C98392345E81800431AE0 /* GoBankaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B62C98432345E81800431AE0 /* GoBankaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62C98532345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBankaUITests" */;
+			buildPhases = (
+				B62C98402345E81800431AE0 /* Sources */,
+				B62C98412345E81800431AE0 /* Frameworks */,
+				B62C98422345E81800431AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B62C98462345E81800431AE0 /* PBXTargetDependency */,
+			);
+			name = GoBankaUITests;
+			productName = GoBankaUITests;
+			productReference = B62C98442345E81800431AE0 /* GoBankaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B62C981B2345E81700431AE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Itunu Adekoyaaa";
+				TargetAttributes = {
+					B62C98222345E81700431AE0 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B62C98382345E81800431AE0 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B62C98222345E81700431AE0;
+					};
+					B62C98432345E81800431AE0 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B62C98222345E81700431AE0;
+					};
+				};
+			};
+			buildConfigurationList = B62C981E2345E81700431AE0 /* Build configuration list for PBXProject "GoBanka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B62C981A2345E81700431AE0;
+			productRefGroup = B62C98242345E81700431AE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B62C98222345E81700431AE0 /* GoBanka */,
+				B62C98382345E81800431AE0 /* GoBankaTests */,
+				B62C98432345E81800431AE0 /* GoBankaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B62C98212345E81700431AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62C98332345E81800431AE0 /* LaunchScreen.storyboard in Resources */,
+				B62C98302345E81800431AE0 /* Assets.xcassets in Resources */,
+				B62C982E2345E81700431AE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62C98372345E81800431AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62C98422345E81800431AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B62C981F2345E81700431AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62C982B2345E81700431AE0 /* ViewController.swift in Sources */,
+				B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */,
+				B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62C98352345E81800431AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62C983E2345E81800431AE0 /* GoBankaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62C98402345E81800431AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62C98492345E81800431AE0 /* GoBankaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B62C983B2345E81800431AE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62C98222345E81700431AE0 /* GoBanka */;
+			targetProxy = B62C983A2345E81800431AE0 /* PBXContainerItemProxy */;
+		};
+		B62C98462345E81800431AE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62C98222345E81700431AE0 /* GoBanka */;
+			targetProxy = B62C98452345E81800431AE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B62C982C2345E81700431AE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62C982D2345E81700431AE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B62C98312345E81800431AE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62C98322345E81800431AE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B62C984B2345E81800431AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B62C984C2345E81800431AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B62C984E2345E81800431AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoBanka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macco.GoBanka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B62C984F2345E81800431AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoBanka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macco.GoBanka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B62C98512345E81800431AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoBankaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macco.GoBankaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoBanka.app/GoBanka";
+			};
+			name = Debug;
+		};
+		B62C98522345E81800431AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoBankaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macco.GoBankaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoBanka.app/GoBanka";
+			};
+			name = Release;
+		};
+		B62C98542345E81800431AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoBankaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macco.GoBankaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoBanka;
+			};
+			name = Debug;
+		};
+		B62C98552345E81800431AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoBankaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = macco.GoBankaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoBanka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B62C981E2345E81700431AE0 /* Build configuration list for PBXProject "GoBanka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62C984B2345E81800431AE0 /* Debug */,
+				B62C984C2345E81800431AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62C984D2345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBanka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62C984E2345E81800431AE0 /* Debug */,
+				B62C984F2345E81800431AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62C98502345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBankaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62C98512345E81800431AE0 /* Debug */,
+				B62C98522345E81800431AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62C98532345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBankaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62C98542345E81800431AE0 /* Debug */,
+				B62C98552345E81800431AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B62C981B2345E81700431AE0 /* Project object */;
+}
