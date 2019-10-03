@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserHomeViewController.swift
 //  GoBanka
 //
 //  Created by Itunu Adekoya on 03/10/2019.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserHomeViewController: UIViewController {
+    
+    var userEmail: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-
