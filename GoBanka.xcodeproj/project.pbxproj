@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8B0F514AD870083EC3B5DDF /* Pods_GoBanka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF7F10F99FA90070B28E50A /* Pods_GoBanka.framework */; };
+		B0CF0B27B95605A287512710 /* Pods_GoBankaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */; };
 		B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98262345E81700431AE0 /* AppDelegate.swift */; };
 		B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98282345E81700431AE0 /* SceneDelegate.swift */; };
 		B62C982B2345E81700431AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C982A2345E81700431AE0 /* ViewController.swift */; };
@@ -15,6 +17,10 @@
 		B62C98332345E81800431AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C98312345E81800431AE0 /* LaunchScreen.storyboard */; };
 		B62C983E2345E81800431AE0 /* GoBankaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C983D2345E81800431AE0 /* GoBankaTests.swift */; };
 		B62C98492345E81800431AE0 /* GoBankaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98482345E81800431AE0 /* GoBankaUITests.swift */; };
+		B62C98572345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
+		B62C98582345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
+		B62C98592345EEBA00431AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */; };
+		FC5FDF8CB402D1A1C098B6A8 /* Pods_GoBankaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14F400291CF3EF30F041A2F3 /* Pods-GoBanka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBanka.debug.xcconfig"; path = "Target Support Files/Pods-GoBanka/Pods-GoBanka.debug.xcconfig"; sourceTree = "<group>"; };
+		1750CFCC7C4B733FB0F5E5E2 /* Pods-GoBanka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBanka.release.xcconfig"; path = "Target Support Files/Pods-GoBanka/Pods-GoBanka.release.xcconfig"; sourceTree = "<group>"; };
+		2DF7F10F99FA90070B28E50A /* Pods_GoBanka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBanka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBankaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBankaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1423026AD78EA7BBC4AEBD /* Pods-GoBankaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaTests.release.xcconfig"; path = "Target Support Files/Pods-GoBankaTests/Pods-GoBankaTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADA94FD8355808B935F4D27D /* Pods-GoBankaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaUITests.release.xcconfig"; path = "Target Support Files/Pods-GoBankaUITests/Pods-GoBankaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B62C98232345E81700431AE0 /* GoBanka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBanka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62C98262345E81700431AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B62C98282345E81700431AE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		B62C98442345E81800431AE0 /* GoBankaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoBankaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62C98482345E81800431AE0 /* GoBankaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBankaUITests.swift; sourceTree = "<group>"; };
 		B62C984A2345E81800431AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D197EFA80C0F34B7E33BC0B3 /* Pods-GoBankaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaTests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaTests/Pods-GoBankaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaUITests/Pods-GoBankaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B0F514AD870083EC3B5DDF /* Pods_GoBanka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5FDF8CB402D1A1C098B6A8 /* Pods_GoBankaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CF0B27B95605A287512710 /* Pods_GoBankaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38AEC4C18380A68DBAE1C3DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14F400291CF3EF30F041A2F3 /* Pods-GoBanka.debug.xcconfig */,
+				1750CFCC7C4B733FB0F5E5E2 /* Pods-GoBanka.release.xcconfig */,
+				D197EFA80C0F34B7E33BC0B3 /* Pods-GoBankaTests.debug.xcconfig */,
+				6A1423026AD78EA7BBC4AEBD /* Pods-GoBankaTests.release.xcconfig */,
+				FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */,
+				ADA94FD8355808B935F4D27D /* Pods-GoBankaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		47DEC32C3074417057E4D572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DF7F10F99FA90070B28E50A /* Pods_GoBanka.framework */,
+				30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */,
+				582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B62C981A2345E81700431AE0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				B62C983C2345E81800431AE0 /* GoBankaTests */,
 				B62C98472345E81800431AE0 /* GoBankaUITests */,
 				B62C98242345E81700431AE0 /* Products */,
+				38AEC4C18380A68DBAE1C3DC /* Pods */,
+				47DEC32C3074417057E4D572 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +150,7 @@
 				B62C982C2345E81700431AE0 /* Main.storyboard */,
 				B62C982F2345E81800431AE0 /* Assets.xcassets */,
 				B62C98312345E81800431AE0 /* LaunchScreen.storyboard */,
+				B62C98562345EEBA00431AE0 /* GoogleService-Info.plist */,
 				B62C98342345E81800431AE0 /* Info.plist */,
 			);
 			path = GoBanka;
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B62C984D2345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBanka" */;
 			buildPhases = (
+				9E3E9081EE57D6B2AA5F50EC /* [CP] Check Pods Manifest.lock */,
 				B62C981F2345E81700431AE0 /* Sources */,
 				B62C98202345E81700431AE0 /* Frameworks */,
 				B62C98212345E81700431AE0 /* Resources */,
+				5C2729EE5CEFB356E6A8086A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B62C98502345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBankaTests" */;
 			buildPhases = (
+				141965F78663BC82449C9E3A /* [CP] Check Pods Manifest.lock */,
 				B62C98352345E81800431AE0 /* Sources */,
 				B62C98362345E81800431AE0 /* Frameworks */,
 				B62C98372345E81800431AE0 /* Resources */,
@@ -170,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B62C98532345E81800431AE0 /* Build configuration list for PBXNativeTarget "GoBankaUITests" */;
 			buildPhases = (
+				D0D8B4A5300D8BC34FBCCC48 /* [CP] Check Pods Manifest.lock */,
 				B62C98402345E81800431AE0 /* Sources */,
 				B62C98412345E81800431AE0 /* Frameworks */,
 				B62C98422345E81800431AE0 /* Resources */,
@@ -233,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62C98332345E81800431AE0 /* LaunchScreen.storyboard in Resources */,
+				B62C98572345EEBA00431AE0 /* GoogleService-Info.plist in Resources */,
 				B62C98302345E81800431AE0 /* Assets.xcassets in Resources */,
 				B62C982E2345E81700431AE0 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62C98582345EEBA00431AE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +301,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62C98592345EEBA00431AE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		141965F78663BC82449C9E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoBankaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C2729EE5CEFB356E6A8086A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoBanka/Pods-GoBanka-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoBanka/Pods-GoBanka-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoBanka/Pods-GoBanka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3E9081EE57D6B2AA5F50EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoBanka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D8B4A5300D8BC34FBCCC48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoBankaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B62C981F2345E81700431AE0 /* Sources */ = {
@@ -432,6 +571,7 @@
 		};
 		B62C984E2345E81800431AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F400291CF3EF30F041A2F3 /* Pods-GoBanka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +589,7 @@
 		};
 		B62C984F2345E81800431AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1750CFCC7C4B733FB0F5E5E2 /* Pods-GoBanka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +607,7 @@
 		};
 		B62C98512345E81800431AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D197EFA80C0F34B7E33BC0B3 /* Pods-GoBankaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +628,7 @@
 		};
 		B62C98522345E81800431AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1423026AD78EA7BBC4AEBD /* Pods-GoBankaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +649,7 @@
 		};
 		B62C98542345E81800431AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +669,7 @@
 		};
 		B62C98552345E81800431AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA94FD8355808B935F4D27D /* Pods-GoBankaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
