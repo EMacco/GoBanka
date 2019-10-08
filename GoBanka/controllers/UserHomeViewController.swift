@@ -28,14 +28,21 @@ class UserHomeViewController: UIViewController {
     let alert = CustomAlert()
     var transactionType = ""
     
+    @IBOutlet weak var receiptTypeLbl: UILabel!
+    @IBOutlet weak var receiptAmountLbl: UILabel!
+    @IBOutlet weak var receiptBalanceLbl: UILabel!
+    @IBOutlet weak var receiptLocationLbl: UILabel!
+    @IBOutlet weak var receiptDateLbl: UILabel!
+    @IBOutlet weak var receiptAccountNumberLbl: UILabel!
+    @IBOutlet weak var receiptContainerView: UIView!
+    var currentReceipt: TransactionModel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         accountDetailsView.dropShadow()
-        
-        currentUser = AuthModel()
-        currentUser.email = "test@test.com"
         
         if self.currentUser.id == nil {
             self.getCurrentUser()
@@ -57,12 +64,12 @@ class UserHomeViewController: UIViewController {
     
     @IBAction func depositBtnClicked(_ sender: UIButton) {
         self.transactionType = "Deposit"
-        self.showTransactionContainerView()
+        self.showTransactionContainerView(isReceipt: false)
     }
     
     @IBAction func withdrawBtnClicked(_ sender: UIButton) {
         self.transactionType = "Withdrawal"
-        self.showTransactionContainerView()
+        self.showTransactionContainerView(isReceipt: false)
     }
     
     @IBAction func transactionBtnClicked(_ sender: UIButton) {
@@ -92,6 +99,7 @@ class UserHomeViewController: UIViewController {
         self.confirmTransactionBtn.isEnabled = false
         confirmUser.login(email: self.currentUser.email, password: self.transactionPasswordField.text!) { (user, error) in
             if error != "" {
+                self.confirmTransactionBtn.isEnabled = true
                 self.alert.showAlert(text: "Password is incorrect", type: "error", parentView: self.transactionContainerView)
             } else {
                 var transactionDetails = [String: Any]()
@@ -161,7 +169,7 @@ class UserHomeViewController: UIViewController {
         }
     }
     
-    func showTransactionContainerView() {
+    func showTransactionContainerView(isReceipt: Bool) {
         let newView = self.transactionContainerView!
         
         self.view.addSubview(newView)
@@ -172,10 +180,25 @@ class UserHomeViewController: UIViewController {
         self.view.addConstraint(NSLayoutConstraint(item: newView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0))
         
         self.transactionTypeLbl.text = self.transactionType
+        if isReceipt {
+            self.receiptContainerView.alpha = 1
+            self.populateReceipt()
+        } else {
+            self.receiptContainerView.alpha = 0
+        }
         
         UIView.animate(withDuration: 0.3) {
             newView.alpha = 1
         }
+    }
+    
+    func populateReceipt() {
+        self.receiptTypeLbl.text = self.currentReceipt.type
+        self.receiptAmountLbl.text = TextFormatter.addCommas(balance: self.currentReceipt.amount)
+        self.receiptBalanceLbl.text = TextFormatter.addCommas(balance: self.currentReceipt.balance)
+        self.receiptLocationLbl.text = self.currentReceipt.location
+        self.receiptDateLbl.text = TextFormatter.convertTimeStamp(serverTimestamp: self.currentReceipt.timestamp)
+        self.receiptAccountNumberLbl.text = self.currentReceipt.accountNumber
     }
     
     @objc func hideTransactionContainerView() {
@@ -214,6 +237,11 @@ extension UserHomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.userTransactions.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.currentReceipt = self.userTransactions[indexPath.row]
+        showTransactionContainerView(isReceipt: true)
     }
     
     func sortViaTimestamp() {
