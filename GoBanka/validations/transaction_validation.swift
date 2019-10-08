@@ -16,4 +16,8 @@ class TransactionValidation {
     static func sufficientBalance(amount: String, balance: Double) -> Bool {
         return (balance - (Double(amount)!) > 0)
     }
+    
+    static func minimumAmount(amount: String) -> Bool {
+         return (Int(amount) ?? 0) > 500
+    }
 }
