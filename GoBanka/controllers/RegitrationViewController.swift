@@ -17,6 +17,7 @@ class RegitrationViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var registerBtn: UIButton!
     let alert = CustomAlert()
+    let currentUser = AuthModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +49,11 @@ class RegitrationViewController: UIViewController {
                 
                 var acctNum = ""
                 for _ in 0..<10 {
-                    acctNum += String(Int.random(in: 0...10))
+                    acctNum += String(Int.random(in: 0...9))
                 }
                 userDetails["accountNumber"] = acctNum
                 
-                AuthModel.createUser(userDetails: userDetails) { (success) in
+                self.currentUser.createUser(userDetails: userDetails) { (success) in
                     if success {
                         self.redirectToHome()
                     } else {
@@ -65,13 +66,14 @@ class RegitrationViewController: UIViewController {
     }
     
     func redirectToHome() {
+        let controller = storyboard?.instantiateViewController(identifier: "userHomeVC") as! UserHomeViewController
+        controller.modalTransitionStyle = .flipHorizontal
+        self.currentUser.email = RequiredFields.trimWhiteSpaces(text: emailField.text!)
+        controller.currentUser = self.currentUser
+        self.present(controller, animated: true, completion: nil)
         self.passwordField.text = ""
         self.fullNameField.text = ""
         self.emailField.text = ""
-        let controller = storyboard?.instantiateViewController(identifier: "userHomeVC") as! UserHomeViewController
-        controller.modalTransitionStyle = .flipHorizontal
-        controller.userEmail = RequiredFields.trimWhiteSpaces(text: emailField.text!)
-        self.present(controller, animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
