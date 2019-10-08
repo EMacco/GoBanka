@@ -10,4 +10,5 @@ import Foundation
 
 protocol TransactionAPIProtocol {
     func fetchUserTransactions(id: String, completionHandler: @escaping((_ transaction: NSDictionary, _ key: String) -> Void))
+    func performTransaction(userId: String, transactionDetails: [String: Any], completionHandler: @escaping((_ success: Bool) -> Void))
 }
