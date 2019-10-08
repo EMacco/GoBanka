@@ -44,4 +44,18 @@ extension TransactionModel: TransactionAPIProtocol {
             }
         }
     }
+    
+    func performTransaction(userId: String, transactionDetails: [String: Any], completionHandler: @escaping((_ success: Bool) -> Void)) {
+        let databaseRef = Database.database().reference().child("Transactions").child(userId).childByAutoId()
+        let userRef = Database.database().reference().child("Users").child(userId).child("balance")
+        databaseRef.setValue(transactionDetails) { (error, _) in
+            if (error != nil) { completionHandler(false) }
+            else {
+                userRef.setValue(transactionDetails["balance"] as! Double) { (error, _) in
+                    if (error != nil) { completionHandler(false) }
+                    else { completionHandler(true) }
+                }
+            }
+        }
+    }
 }

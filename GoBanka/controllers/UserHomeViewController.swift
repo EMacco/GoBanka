@@ -18,16 +18,95 @@ class UserHomeViewController: UIViewController {
     var userTransactions = [TransactionModel]()
     let transactionModel = TransactionModel()
     @IBOutlet weak var noTransactionsLbl: UILabel!
+    @IBOutlet var transactionContainerView: UIView!
+    @IBOutlet weak var transactionFormView: UIView!
+    @IBOutlet weak var transactionBlurView: UIVisualEffectView!
+    @IBOutlet weak var transactionTypeLbl: UILabel!
+    @IBOutlet weak var transactionAmountField: UITextField!
+    @IBOutlet weak var transactionPasswordField: UITextField!
+    @IBOutlet weak var confirmTransactionBtn: UIButton!
+    let alert = CustomAlert()
+    var transactionType = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         accountDetailsView.dropShadow()
         
+        currentUser = AuthModel()
+        currentUser.email = "test@test.com"
+        
         if self.currentUser.id == nil {
             self.getCurrentUser()
         } else {
             self.populateUserDetails()
+        }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.hideTransactionContainerView))
+        self.transactionBlurView.addGestureRecognizer(tap)
+        
+        let tapForm = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
+        self.transactionFormView.addGestureRecognizer(tapForm)
+        self.confirmTransactionBtn.setTitle("Please wait...", for: .disabled)
+    }
+    
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func depositBtnClicked(_ sender: UIButton) {
+        self.transactionType = "Deposit"
+        self.showTransactionContainerView()
+    }
+    
+    @IBAction func withdrawBtnClicked(_ sender: UIButton) {
+        self.transactionType = "Withdrawal"
+        self.showTransactionContainerView()
+    }
+    
+    @IBAction func transactionBtnClicked(_ sender: UIButton) {
+        if RequiredFields.requiredFieldsEmpty(fields: [transactionAmountField.text!, transactionPasswordField.text!]) {
+            alert.showAlert(text: "Please fill all required information", type: "info", parentView: self.transactionContainerView)
+            return
+        }
+        
+        if !TransactionValidation.multipleOf500(amount: transactionAmountField.text!) {
+            alert.showAlert(text: "You can only withdraw in multiples of 500", type: "error", parentView: self.transactionContainerView)
+            return
+        }
+        
+        if !TransactionValidation.sufficientBalance(amount: transactionAmountField.text!, balance: self.currentUser.balance) {
+            alert.showAlert(text: "You have insufficient balance", type: "error", parentView: self.transactionContainerView)
+            return
+        }
+        
+        let confirmUser = AuthModel()
+        self.confirmTransactionBtn.isEnabled = false
+        confirmUser.login(email: self.currentUser.email, password: self.transactionPasswordField.text!) { (user, error) in
+            if error != "" {
+                self.alert.showAlert(text: "Password is incorrect", type: "error", parentView: self.transactionContainerView)
+            } else {
+                var transactionDetails = [String: Any]()
+                transactionDetails["accountNumber"] = self.currentUser.accountNumber
+                transactionDetails["amount"] = Double(self.transactionAmountField.text!)
+                transactionDetails["balance"] = self.currentUser.balance - (Double(self.transactionAmountField.text!)!)
+                transactionDetails["location"] = "Lagos, Nigeria"
+                transactionDetails["timestamp"] = [".sv": "timestamp"]
+                transactionDetails["type"] = self.transactionType
+                
+                self.transactionModel.performTransaction(userId: self.currentUser.id, transactionDetails: transactionDetails) { (success) in
+                    self.confirmTransactionBtn.isEnabled = true
+                    if success {
+                        self.hideTransactionContainerView()
+                        self.transactionPasswordField.text = ""
+                        self.transactionAmountField.text = ""
+                        self.alert.showAlert(text: "Transaction Successful", type: "success", parentView: self.view)
+                        self.currentUser.balance = transactionDetails["balance"] as? Double
+                        self.availableBalanceLbl.text = TextFormatter.addCommas(balance: self.currentUser.balance)
+                    }
+                }
+            }
         }
     }
     
@@ -66,6 +145,31 @@ class UserHomeViewController: UIViewController {
                     self.populateUserDetails()
                 }
             }
+        }
+    }
+    
+    func showTransactionContainerView() {
+        let newView = self.transactionContainerView!
+        
+        self.view.addSubview(newView)
+        self.transactionContainerView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addConstraint(NSLayoutConstraint(item: newView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: newView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: newView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: newView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0))
+        
+        self.transactionTypeLbl.text = self.transactionType
+        
+        UIView.animate(withDuration: 0.3) {
+            newView.alpha = 1
+        }
+    }
+    
+    @objc func hideTransactionContainerView() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.transactionContainerView.alpha = 0
+        }) { (true) in
+            self.transactionContainerView.removeFromSuperview()
         }
     }
 }

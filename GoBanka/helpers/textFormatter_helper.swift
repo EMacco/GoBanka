@@ -17,7 +17,7 @@ class TextFormatter {
     }
     
     static func convertTimeStamp(serverTimestamp: Double) -> String {
-        let date = NSDate(timeIntervalSince1970: serverTimestamp)
+        let date = NSDate(timeIntervalSince1970: (serverTimestamp / 1000))
         let dayTimePeriodFormatter = DateFormatter()
         dayTimePeriodFormatter.dateFormat = "MMM dd YYYY hh:mm a"
         let dateString = dayTimePeriodFormatter.string(from: date as Date)

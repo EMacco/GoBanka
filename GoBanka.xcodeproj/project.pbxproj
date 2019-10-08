@@ -30,6 +30,7 @@
 		B6C3767C2346122E00039A51 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3767B2346122E00039A51 /* AuthModel.swift */; };
 		B6F5EF14234C9DD5003B6E90 /* TransactionApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5EF13234C9DD5003B6E90 /* TransactionApiProtocol.swift */; };
 		B6F5EF16234CA358003B6E90 /* textFormatter_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5EF15234CA358003B6E90 /* textFormatter_helper.swift */; };
+		B6F80B9A234CBC7900B606D5 /* transaction_validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F80B99234CBC7900B606D5 /* transaction_validation.swift */; };
 		FC5FDF8CB402D1A1C098B6A8 /* Pods_GoBankaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		B6C3767B2346122E00039A51 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		B6F5EF13234C9DD5003B6E90 /* TransactionApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionApiProtocol.swift; sourceTree = "<group>"; };
 		B6F5EF15234CA358003B6E90 /* textFormatter_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFormatter_helper.swift; sourceTree = "<group>"; };
+		B6F80B99234CBC7900B606D5 /* transaction_validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transaction_validation.swift; sourceTree = "<group>"; };
 		D197EFA80C0F34B7E33BC0B3 /* Pods-GoBankaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaTests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaTests/Pods-GoBankaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA4ED92E50BE0F39451A1B22 /* Pods-GoBankaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoBankaUITests/Pods-GoBankaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				B6C3767323460B4200039A51 /* auth_validation.swift */,
+				B6F80B99234CBC7900B606D5 /* transaction_validation.swift */,
 			);
 			path = validations;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				B683DCED234647CC00BA8A02 /* TransactionModel.swift in Sources */,
 				B683DCEA234643CB00BA8A02 /* UserHomeViewController.swift in Sources */,
 				B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */,
+				B6F80B9A234CBC7900B606D5 /* transaction_validation.swift in Sources */,
 				B6A4EF4E234C8EE30033B21F /* AuthApiProtocol.swift in Sources */,
 				B6C3767C2346122E00039A51 /* AuthModel.swift in Sources */,
 			);
