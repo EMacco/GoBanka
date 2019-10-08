@@ -71,13 +71,20 @@ class UserHomeViewController: UIViewController {
             return
         }
         
-        if !TransactionValidation.multipleOf500(amount: transactionAmountField.text!) {
-            alert.showAlert(text: "You can only withdraw in multiples of 500", type: "error", parentView: self.transactionContainerView)
-            return
+        if self.transactionType.lowercased() == "withdrawal" {
+            if !TransactionValidation.multipleOf500(amount: transactionAmountField.text!) {
+                alert.showAlert(text: "You can only withdraw in multiples of 500", type: "error", parentView: self.transactionContainerView)
+                return
+            }
+            
+            if !TransactionValidation.sufficientBalance(amount: transactionAmountField.text!, balance: self.currentUser.balance) {
+                alert.showAlert(text: "You have insufficient balance", type: "error", parentView: self.transactionContainerView)
+                return
+            }
         }
         
-        if !TransactionValidation.sufficientBalance(amount: transactionAmountField.text!, balance: self.currentUser.balance) {
-            alert.showAlert(text: "You have insufficient balance", type: "error", parentView: self.transactionContainerView)
+        if !TransactionValidation.minimumAmount(amount: transactionAmountField.text!) {
+            alert.showAlert(text: "Minimum amount is N500", type: "error", parentView: self.transactionContainerView)
             return
         }
         
@@ -90,7 +97,13 @@ class UserHomeViewController: UIViewController {
                 var transactionDetails = [String: Any]()
                 transactionDetails["accountNumber"] = self.currentUser.accountNumber
                 transactionDetails["amount"] = Double(self.transactionAmountField.text!)
-                transactionDetails["balance"] = self.currentUser.balance - (Double(self.transactionAmountField.text!)!)
+                
+                if self.transactionType.lowercased() == "withdrawal" {
+                    transactionDetails["balance"] = self.currentUser.balance - (Double(self.transactionAmountField.text!)!)
+                } else {
+                    transactionDetails["balance"] = self.currentUser.balance + (Double(self.transactionAmountField.text!)!)
+                }
+                
                 transactionDetails["location"] = "Lagos, Nigeria"
                 transactionDetails["timestamp"] = [".sv": "timestamp"]
                 transactionDetails["type"] = self.transactionType
