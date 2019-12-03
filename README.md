@@ -1,4 +1,5 @@
 # GoBanka
+[![CircleCI](https://circleci.com/gh/EMacco/GoBanka.svg?style=svg)](https://circleci.com/gh/EMacco/GoBanka)
 An ATM simulator app for iOS that allows users to be able to perform basic transactions using their mobile device
 
 # Project Management

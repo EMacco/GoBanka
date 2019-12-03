@@ -89,7 +89,7 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -127,6 +127,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 2ba63fd64e64c3a6acbc26c198e27066cb039c13
+PODFILE CHECKSUM: 3149ae01fb2519cfa1bd9917462fa9132247f846
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

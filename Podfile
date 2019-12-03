@@ -15,10 +15,9 @@ target 'GoBanka' do
     inherit! :search_paths
     # Pods for testing
   end
+end
 
-  target 'GoBankaUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target 'GoBankaUITests' do
+  inherit! :search_paths
+  # Pods for testing
 end

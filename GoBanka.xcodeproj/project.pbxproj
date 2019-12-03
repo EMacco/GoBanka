@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1A85BF37B376132C642394 /* libPods-GoBankaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D88272DECC9D01936B9F575 /* libPods-GoBankaUITests.a */; };
 		A8B0F514AD870083EC3B5DDF /* Pods_GoBanka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF7F10F99FA90070B28E50A /* Pods_GoBanka.framework */; };
-		B0CF0B27B95605A287512710 /* Pods_GoBankaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */; };
 		B62C98272345E81700431AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98262345E81700431AE0 /* AppDelegate.swift */; };
 		B62C98292345E81700431AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C98282345E81700431AE0 /* SceneDelegate.swift */; };
 		B62C982B2345E81700431AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C982A2345E81700431AE0 /* LoginViewController.swift */; };
@@ -60,8 +60,8 @@
 		1750CFCC7C4B733FB0F5E5E2 /* Pods-GoBanka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBanka.release.xcconfig"; path = "Target Support Files/Pods-GoBanka/Pods-GoBanka.release.xcconfig"; sourceTree = "<group>"; };
 		2DF7F10F99FA90070B28E50A /* Pods_GoBanka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBanka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBankaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBankaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1423026AD78EA7BBC4AEBD /* Pods-GoBankaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaTests.release.xcconfig"; path = "Target Support Files/Pods-GoBankaTests/Pods-GoBankaTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D88272DECC9D01936B9F575 /* libPods-GoBankaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoBankaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA94FD8355808B935F4D27D /* Pods-GoBankaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBankaUITests.release.xcconfig"; path = "Target Support Files/Pods-GoBankaUITests/Pods-GoBankaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B62C98232345E81700431AE0 /* GoBanka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBanka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62C98262345E81700431AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0CF0B27B95605A287512710 /* Pods_GoBankaUITests.framework in Frameworks */,
+				0B1A85BF37B376132C642394 /* libPods-GoBankaUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +143,7 @@
 			children = (
 				2DF7F10F99FA90070B28E50A /* Pods_GoBanka.framework */,
 				30395D4FA62C8DC194E3B99A /* Pods_GoBankaTests.framework */,
-				582B05E3017DFD5467971222 /* Pods_GoBankaUITests.framework */,
+				7D88272DECC9D01936B9F575 /* libPods-GoBankaUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
