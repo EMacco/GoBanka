@@ -4,16 +4,16 @@
 #
 version: 2
 jobs:
-  swiftlint:
-    docker:
-      - image: dantoml/swiftlint:latest
-    steps:
-      - checkout
-      - run: swiftlint lint --reporter junit | tee result.xml
-      - store_artifacts:
-          path: result.xml
-      - store_test_results:
-            path: result.xml
+#  swiftlint:
+#    docker:
+#      - image: dantoml/swiftlint:latest
+#    steps:
+#      - checkout
+#      - run: swiftlint lint --reporter junit | tee result.xml
+#      - store_artifacts:
+#          path: result.xml
+#      - store_test_results:
+#            path: result.xml
   build-and-test:
     macos:
       xcode: "11.0.0"
@@ -42,5 +42,5 @@ workflows:
   version: 2
   lint-build-and-test:
     jobs:
-      - swiftlint
+#      - swiftlint
       - build-and-test
