@@ -16,7 +16,7 @@ jobs:
 #            path: result.xml
   build-and-test:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.2.1"
 
     steps:
       - checkout
@@ -39,7 +39,7 @@ jobs:
           destination: scan-logs
   bump-build:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.2.1"
     environment:
       - LC_ALL: "en_US.UTF-8"
       - LANG: "en_US.UTF-8"
@@ -56,7 +56,7 @@ jobs:
           command: bundle exec fastlane bump
   deploy-beta:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.2.1"
     environment:
       - LC_ALL: "en_US.UTF-8"
       - LANG: "en_US.UTF-8"
