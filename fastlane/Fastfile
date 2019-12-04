@@ -57,7 +57,7 @@ platform :ios do
     
     # 3. Build the app
     match(type: "appstore", readonly: true, skip_docs: true)
-    target_scheme = options[:scheme] || "GoBanka-Debug-Development"
+    target_scheme = options[:scheme] || "GoBanka"
     build_app(scheme: target_scheme)
     
     # 4. Upload it to testflight
@@ -65,7 +65,7 @@ platform :ios do
     upload_to_testflight(
       changelog: comments,
       distribute_external: true,
-      groups: groups
+      groups: GobankaTesters
     )
   end
 end
