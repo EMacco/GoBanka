@@ -54,7 +54,7 @@ jobs:
       - run:
           name: Bump the build number and commit
           command: bundle exec fastlane bump
-  submit_to_testflight:
+  deploy-beta:
     macos:
       xcode: "11.0.0"
     environment:
