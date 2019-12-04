@@ -46,9 +46,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: install Brewfile
-          command: brew bundle
-      - run:
           name: Installing gem dependencies
           command: bundle install
       - add_ssh_keys:
@@ -65,9 +62,6 @@ jobs:
       - LANG: "en_US.UTF-8"
     steps:
       - checkout
-      - run:
-          name: install Brewfile
-          command: brew bundle
       - run:
           name: Installing gem dependencies
           command: bundle install
