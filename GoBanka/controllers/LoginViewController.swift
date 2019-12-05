@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     let alert = CustomAlert()
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var appReleaseDetailsLbl: UILabel!
     
     let currentUser = AuthModel()
     
@@ -26,6 +27,11 @@ class LoginViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         loginBtn.setTitle("Loading...", for: .disabled)
+        
+        let appVersionString: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+        let buildNumber: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
+        
+        appReleaseDetailsLbl.text = "Version \(appVersionString) (\(buildNumber))"
     }
     
     @IBAction func loginBtnClicked(_ sender: UIButton) {
