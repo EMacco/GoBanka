@@ -40,6 +40,7 @@ platform :ios do
   
   desc "Submit latest versioned build to testflight"
   lane :submit_to_testflight do |options|
+    setup_circle_ci
     # 1. Do some math to get build tags
     build_number = get_build_number(xcodeproj: "GoBanka.xcodeproj")
     last_build_number = build_number.to_i - 1
