@@ -68,6 +68,7 @@ platform :ios do
       distribute_external: true,
       notify_external_testers: true,
       wait_for_uploaded_build: true,
+      skip_waiting_for_build_processing: true,
       groups: groups
     )
   end
