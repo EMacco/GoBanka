@@ -1,5 +1,5 @@
 app_identifier("macco.GoBanka") # The bundle identifier of your app
-apple_id("emma4real37@icloud.com") # Your Apple email address
+apple_id("teammacco@gmail.com") # Your Apple email address
 
 itc_team_id("119446200") # App Store Connect Team ID
 team_id("RT459C64W3") # Developer Portal Team ID
