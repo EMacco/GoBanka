@@ -67,6 +67,7 @@ platform :ios do
       changelog: comments,
       distribute_external: true,
       notify_external_testers: true,
+      skip_waiting_for_build_processing: true,
       groups: groups
     )
   end
