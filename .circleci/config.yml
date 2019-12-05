@@ -76,21 +76,21 @@ workflows:
   version: 2
   build-test-lint:
     jobs:
-      - build-and-test:
-          filters:
-            tags:
-              only: /.*/
+#       - build-and-test:
+#           filters:
+#             tags:
+#               only: /.*/
       - bump-build:
-          requires:
-            - build-and-test
+#           requires:
+#             - build-and-test
           filters:
             branches:
               only: develop
             tags:
               only: /.*/
       - deploy-beta:
-          requires:
-            - build-and-test
+#           requires:
+#             - build-and-test
           filters:
             branches:
               ignore: /.*/
